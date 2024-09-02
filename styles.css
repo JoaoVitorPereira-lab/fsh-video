@@ -1,0 +1,70 @@
+/* Resetando margens e preenchimentos */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* Definindo o fundo escuro para toda a página */
+body {
+   background-color: #121212;
+   color: #ffffff;
+   font-family: Arial, sans-serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   margin: 0; /* Remove qualquer margem padrão do body */
+}
+
+/* Estilizando o container do vídeo */
+.container {
+   width: 80%;
+   max-width: 640px; /* Define um tamanho máximo para o container */
+   height: auto; /* Permite que a altura se ajuste ao conteúdo */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: #1e1e1e;
+   border-radius: 16px;
+   overflow: hidden;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+   position: relative;
+}
+
+/* Estilizando o vídeo */
+.video {
+   width: 100%;
+   height: auto; /* Mantém a proporção do vídeo */
+   max-width: 100%; /* Limita a largura máxima do vídeo ao container */
+   border-radius: 16px;
+}
+
+/* Estilizando os controles */
+.controls {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 10px;
+   gap: 10px;
+}
+
+button {
+   background-color: #333;
+   border: none;
+   color: #fff;
+   padding: 10px 20px;
+   border-radius: 8px;
+   cursor: pointer;
+   font-size: 16px;
+   transition: background-color 0.3s;
+}
+
+button:hover {
+   background-color: #555;
+}
+
+button:active {
+   background-color: #777;
+}
