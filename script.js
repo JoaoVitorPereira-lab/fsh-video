@@ -7,10 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
    playPauseButton.addEventListener('click', () => {
        if (video.paused) {
            video.play();
-           playPauseButton.textContent = 'Pause';
+           playPauseButton.textContent = 'Pausar';
        } else {
            video.pause();
-           playPauseButton.textContent = 'Play';
+           playPauseButton.textContent = 'Retomar';
        }
    });
 
